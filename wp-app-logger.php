@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: WP App Logger
-Description: Allows developer to put do_action( 'wp_app_logger', 'Descriptor', $variable ) and log the values to user- and date- specific log files
+Description: Allows developer to put do_action( 'wp_app_log', 'Descriptor', $variable ) and log the values to user- and date- specific log files
 Plugin URI: https://github.com/andrej1c/wp-app-logger
 Author: Andrej Ciho
 */
