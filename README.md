@@ -10,7 +10,7 @@ To start:
 3. Add some calls to the action hook in your theme, for example:
 
 ```
-do_action( 'wp_app_logger', 'At the top of sidebar', $wp_query );
+do_action( 'wp_app_log', 'At the top of sidebar', $wp_query );
 ```
 
 If you are logged in as "testuser" and today was 2014-06-27 a log file called "logs/print-2014-06-27-testuser.log" would be created, relative to the plugin folder.
