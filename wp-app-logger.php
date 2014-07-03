@@ -6,8 +6,7 @@ Plugin URI: https://github.com/andrej1c/wp-app-logger
 Author: Andrej Ciho
 */
 
-class AC_WP_App_Logger
-{
+class AC_WP_App_Logger {
 	function log( $source = '', $message = '' )  {	
 		if ( empty( $source ) ) {
 			return;
@@ -33,6 +32,6 @@ class AC_WP_App_Logger
 
 if ( defined( 'WP_DEBUG_LOG' ) ) {
 	if ( true == WP_DEBUG_LOG ) {
-		add_action( 'wp_app_log', array( 'AC_WP_App_Logger', 'log' ), 10, 2 );
+		add_action( 'wp_app_log', array( 'AC_WP_App_Logger', 'log' ), 1, 2 );
 	}
 }
